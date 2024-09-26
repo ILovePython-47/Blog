@@ -507,11 +507,7 @@ files = [
 ]
 
 [package.dependencies]
-numpy = [
-    {version = ">=1.22.4", markers = "python_version < \"3.11\""},
-    {version = ">=1.23.2", markers = "python_version == \"3.11\""},
-    {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
-]
+numpy = {version = ">=1.22.4", markers = "python_version < \"3.11\""}
 python-dateutil = ">=2.8.2"
 pytz = ">=2020.1"
 tzdata = ">=2022.1"
@@ -631,7 +627,7 @@ files = [
 
 [[package]]
 name = "pyarrow"
-version = "17.0.0"
+version = "13.0.0"
 description = "Python library for Apache Arrow"
 optional = false
 python-versions = ">=3.8"
@@ -1141,5 +1137,5 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 
 [metadata]
 lock-version = "2.0"
-python-versions = ">=3.10.0"
-content-hash = "9d7f827370f6432d31c8b0ccf66835197edb1aa2be7bb325961dd0181a913ba6"
+python-versions = ">=3.10.0,<3.11"
+content-hash = "c5a2abaabdbcc633114e4a895c25726e42ae9c37cec9aff227a3cc5594c5481c"
